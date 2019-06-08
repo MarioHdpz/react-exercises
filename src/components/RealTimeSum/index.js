@@ -3,7 +3,7 @@ import Counter from "../Counter";
 
 export default class RealTimeSum extends Component {
     state = {
-        count: [0 ,0 ,0]
+        count: Array(this.props.numberOfCounters).fill(0),
     }
 
     add = index => {
@@ -29,7 +29,7 @@ export default class RealTimeSum extends Component {
         return (
             <div>
                 {counters}
-                <h1>Sum: {0}</h1>
+                <h1>Sum: {this.state.count.reduce((a,b) => a + b)}</h1>
             </div>
         );
     }

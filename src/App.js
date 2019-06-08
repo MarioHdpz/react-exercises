@@ -5,7 +5,7 @@ import RealTimeSum from './components/RealTimeSum';
 function App() {
   return (
     <div className="main">
-      <RealTimeSum />
+      <RealTimeSum numberOfCounters={4} />
     </div>
   );
 }
