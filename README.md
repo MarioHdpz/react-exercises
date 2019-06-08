@@ -17,11 +17,18 @@ To see the solution checkout to the solution branch with the same id:
 
 ___
 
-### Exercise 2: Real time sum
+### Exercise 3: Real time sum with configurable number of counters
 
-Now you have two counters, their values would only change with its own buttons.
+Know you have to make a Real time sum but with a configurable number of counters.
 
-And also you have another value that should show the sum of the two counters in real time.
+The Counter component is separated and it triggers two functions:
 
-Extra points: Show another result with the absolute difference between counters.
+1. onAdd when adding (this.props.onAdd() to call it)
+2. onSubstract on substracting (this.props.onSubstract() to call it)
 
+Where do you have to call them?
+
+Extra points 1: Counter state can be managed by its parent component, so convert it
+to a functional component.
+
+Extra points 2: Pass the number of arrays as a prop to the RealTimeSum component.
