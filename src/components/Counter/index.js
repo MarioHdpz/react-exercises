@@ -5,16 +5,22 @@ export default class Counter extends Component {
         count: 0,
     }
 
-    add = () => {}
+    add = () => {
+        this.setState({count: this.state.count + 1})
+    }
 
-    substract = () => {}
+    substract = () => {
+        if(this.state.count > 0) {
+            this.setState({count: this.state.count - 1})
+        }
+    }
 
     render() {
         return (
             <div className="counter">
-                <div>-</div>
+                <div onClick={() => this.substract()}>-</div>
                 <h1>{this.state.count}</h1>
-                <div>+</div>
+                <div onClick={() => this.add()}>+</div>
             </div>
         );
     }
