@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter';
+import RealTimeSum from './components/RealTimeSum';
 
 function App() {
   return (
     <div className="main">
-      <Counter />
+      <RealTimeSum />
     </div>
   );
 }

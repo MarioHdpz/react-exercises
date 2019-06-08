@@ -17,11 +17,11 @@ To see the solution checkout to the solution branch with the same id:
 
 ___
 
-### Exercise 1: Counter
+### Exercise 2: Real time sum
 
-By clicking in the + and - buttons you have to add o substract to the presented value.
+Now you have two counters, their values would only change with its own buttons.
 
-All logic is in Counter component.
+And also you have another value that should show the sum of the two counters in real time.
 
-Extra points: Limit the counter to only show positive numbers.
+Extra points: Show another result with the absolute difference between counters.
 
