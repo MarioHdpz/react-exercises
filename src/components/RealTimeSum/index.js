@@ -3,7 +3,7 @@ import Counter from "../Counter";
 
 export default class RealTimeSum extends Component {
     state = {
-        count: [0 ,0 ,0]
+        count: [0 ,0 ,0, 0, 0, 0, 0]
     }
 
     add = index => {
