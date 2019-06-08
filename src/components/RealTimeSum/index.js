@@ -7,13 +7,17 @@ export default class Counter extends Component {
 
     add = index => {
         const newCount = this.state.count.slice(); // This line only creates a copy of count
-        newCount[index] = this.state.count[index] + 1;
+        /**
+         * Here you can manipulate newCount
+        */
         this.setState({count: newCount});
     }
 
     substract = index => {
         const newCount = this.state.count.slice(); // This line only creates a copy of count
-        newCount[index] = this.state.count[index] - 1;
+        /**
+         * Here you can change your new count
+        */
         this.setState({count: newCount});
     }
 
@@ -21,17 +25,16 @@ export default class Counter extends Component {
         return (
             <div>
                 <div className="counter">
-                    <div onClick={() => this.substract(0)}>-</div>
+                    <div onClick={() => {}}>-</div>
                     <h1>{this.state.count[0]}</h1>
-                    <div onClick={() => this.add(0)}>+</div>
+                    <div onClick={() => {}}>+</div>
                 </div>
                 <div className="counter">
-                    <div onClick={() => this.substract(1)}>-</div>
+                    <div onClick={() => {}}>-</div>
                     <h1>{this.state.count[1]}</h1>
-                    <div onClick={() => this.add(1)}>+</div>
+                    <div onClick={() => {}}>+</div>
                 </div>
-                <h1>Sum: {this.state.count[0] + this.state.count[1]}</h1>
-                <h1>Difference: {Math.abs(this.state.count[0] - this.state.count[1])}</h1>
+                <h1>Sum: {0}</h1>
             </div>
         );
     }
