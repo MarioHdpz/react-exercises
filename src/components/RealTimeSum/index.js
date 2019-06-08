@@ -2,25 +2,24 @@ import React, { Component } from "react";
 
 export default class Counter extends Component {
     state = {
-        countA: 0,
-        countB: 0,
+        count: [0, 0]
     }
 
-    add = id => {}
+    add = index => {}
 
-    substract = id => {}
+    substract = index => {}
 
     render() {
         return (
             <div>
                 <div className="counter">
                     <div>-</div>
-                    <h1>{this.state.countA}</h1>
+                    <h1>{this.state.count[0]}</h1>
                     <div>+</div>
                 </div>
                 <div className="counter">
                     <div>-</div>
-                    <h1>{this.state.countB}</h1>
+                    <h1>{this.state.count[1]}</h1>
                     <div>+</div>
                 </div>
                 <h1>Sum: {0}</h1>
